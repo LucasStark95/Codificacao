@@ -9,13 +9,20 @@ using System.Text;
  */
 public class Consulta_M {
 
-    public string dataConsulta;
-    public string nomeAluno;
-    public string nomePaciente;
+    private string dataConsulta;
+    private string nomeAluno;
+    private string nomePaciente;
+    private int id;
+
 
     public Consulta_M() {
     }
 
+    public int Id
+    {
+        get { return id; }
+        set { id = value; }
+    }
 
     public string DataConsulta
     {

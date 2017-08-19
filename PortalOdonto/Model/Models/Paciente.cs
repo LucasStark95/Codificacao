@@ -35,10 +35,16 @@ public class Paciente {
     private string cidade;
     private double pressaoArterial;
     private double batimentoCardiaco;
+    private int id;
 
     public Paciente() {
     }
 
+    public int Id
+    {
+        get { return id; }
+        set { id = value}
+    }
     public string NomePaciente {
         get { return nomePaciente; }
         set { nomePaciente = value; }
