@@ -7,8 +7,15 @@ using System.Text;
 
 public class Administrador : Usuario {
 
-   
+    private int idAdministrador;
+
     public Administrador() {
+    }
+
+    public int IdAdministrador
+    {
+        get { return idAdministrador; }
+        set { idAdministrador = value; }
     }
 
    

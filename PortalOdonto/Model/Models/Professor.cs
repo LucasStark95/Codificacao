@@ -7,10 +7,15 @@ using System.Text;
 
 public class Professor : Usuario {
 
+    private int idProfessor;
     
     public Professor() {
     }
 
+    public int IdProfessor
+    {
+
+    }
 
     public void validarPront() {
        
