@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model.Models;
+
 
 namespace Persistencia.Persistence
 {
-    class RepositorioPeriograma
+    public class RepositorioPeriograma
     {
         private static List<Periograma> listaPeriogramas;
 
@@ -17,20 +19,20 @@ namespace Persistencia.Persistence
 
         public Periograma Adicionar(Periograma periograma)
         {
-            periograma.Id = listaPeriogramas.Count + 1;
+            periograma.IdPeriograma = listaPeriogramas.Count + 1;
             listaPeriogramas.Add(periograma);
             return periograma;
         }
 
         public void Editar(Periograma periograma)
         {
-            int posicao = listaPeriogramas.FindIndex(e => e.Id == periograma.Id);
+            int posicao = listaPeriogramas.FindIndex(e => e.IdPeriograma == periograma.IdPeriograma);
             listaPeriogramas[posicao] = periograma;
         }
 
         public void Remover(Periograma periograma)
         {
-            int posicao = listaPeriogramas.FindIndex(e => e.Id == periograma.Id);
+            int posicao = listaPeriogramas.FindIndex(e => e.IdPeriograma == periograma.IdPeriograma);
             listaPeriogramas.RemoveAt(posicao);
         }
 

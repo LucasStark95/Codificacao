@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model.Models;
 
 namespace Persistencia.Persistence
 {
-    class RepositorioUsuario
+    public class RepositorioUsuario
     {
-        //Creio que não seja necessario essa classe de persistencia, ja que ela é uma classe de herança para as outras
-        private static List<Usuario> listaUsuarios;
+       private static List<Usuario> listaUsuarios;
 
         static RepositorioUsuario()
         {
@@ -18,20 +18,20 @@ namespace Persistencia.Persistence
 
         public Usuario Adicionar(Usuario usuario)
         {
-            usuario.MatriculaUsuario = listaUsuarios.Count + 1;
+            usuario.IdUsuario = listaUsuarios.Count + 1;
             listaUsuarios.Add(usuario);
             return usuario;
         }
 
         public void Editar(Usuario usuario)
         {
-            int posicao = listaUsuarios.FindIndex(e => e.MatriculaUsuario == usuario.MatriculaUsuario);
+            int posicao = listaUsuarios.FindIndex(e => e.IdUsuario == usuario.IdUsuario);
             listaUsuarios[posicao] = usuario;
         }
 
         public void Remover(Usuario usuario)
         {
-            int posicao = listaUsuarios.FindIndex(e => e.MatriculaUsuario == usuario.MatriculaUsuario);
+            int posicao = listaUsuarios.FindIndex(e => e.IdUsuario == usuario.IdUsuario);
             listaUsuarios.RemoveAt(posicao);
         }
 

@@ -4,26 +4,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-
-public class Professor : Usuario {
-
-    private int idProfessor;
-    
-    public Professor() {
-    }
-
-    public int IdProfessor
+namespace Model.Models
+{
+    public class Professor : Usuario
     {
 
-    }
+        private int idProfessor;
 
-    public void validarPront() {
-       
-    }
+        public Professor()
+        {
+        }
 
-    
-    public void visualizarPront() {
-       
-    }
 
+        public int IdProfessor
+        {
+            get { return idProfessor; }
+            set { idProfessor = value; }
+        }
+
+
+        public void validarPront()
+        {
+
+        }
+
+
+        public void visualizarPront()
+        {
+
+        }
+    }
 }

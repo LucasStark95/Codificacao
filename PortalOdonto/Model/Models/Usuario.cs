@@ -5,46 +5,56 @@ using System.Linq;
 using System.Text;
 
 
-public class Usuario
+namespace Model.Models
 {
-
-    private string nomeUsuario;
-    private int matriculaUsuario;
-    private string emailUsuario;
-    private string senhaUsuario;
-    private string tipoUsuario;
-
-    public Usuario()
+    public class Usuario
     {
-    }
 
-    public string NomeUsuario
-    {
-        get { return nomeUsuario; }
-        set { nomeUsuario = value; }
-    }
+        private int idUsuario;
+        private string nomeUsuario;
+        private int matriculaUsuario;
+        private string emailUsuario;
+        private string senhaUsuario;
+        private string tipoUsuario;
 
-    public int MatriculaUsuario
-    {
-        get { return matriculaUsuario; }
-        set { matriculaUsuario = value; }
-    }
+        public Usuario()
+        {
+        }
 
-    public string EmailUsuario
-    {
-        get { return emailUsuario; }
-        set { emailUsuario = value; }
-    }
+        public int IdUsuario
+        {
+            get { return idUsuario; }
+            set { idUsuario = value; }
+        }
 
-    public string SenhaUsuario
-    {
-        get { return senhaUsuario; }
-        set { senhaUsuario = value; }
-    }
+        public string NomeUsuario
+        {
+            get { return nomeUsuario; }
+            set { nomeUsuario = value; }
+        }
 
-    public string TipoUsuario
-    {
-        get { return tipoUsuario; }
-        set { tipoUsuario = value; }
+        public int MatriculaUsuario
+        {
+            get { return matriculaUsuario; }
+            set { matriculaUsuario = value; }
+        }
+
+        public string EmailUsuario
+        {
+            get { return emailUsuario; }
+            set { emailUsuario = value; }
+        }
+
+        public string SenhaUsuario
+        {
+            get { return senhaUsuario; }
+            set { senhaUsuario = value; }
+        }
+
+        public string TipoUsuario
+        {
+            get { return tipoUsuario; }
+            set { tipoUsuario = value; }
+        }
     }
 }

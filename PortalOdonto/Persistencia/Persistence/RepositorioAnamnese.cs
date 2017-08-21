@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model.Models;
+
 
 namespace Persistencia.Persistence
 {
-    class RepositorioAnamnese
+    public class RepositorioAnamnese
     {
         private static List<Anamnese> listaAnamneses;
 
@@ -17,20 +19,20 @@ namespace Persistencia.Persistence
 
         public Anamnese Adicionar(Anamnese anamnese)
         {
-            anamnese.CodPergunta = listaAnamneses.Count + 1;
+            anamnese.IdAnamnese = listaAnamneses.Count + 1;
             listaAnamneses.Add(anamnese);
             return anamnese;
         }
 
         public void Editar(Anamnese anamnese)
         {
-            int posicao = listaAnamneses.FindIndex(e => e.CodPergunta == anamnese.CodPergunta);
+            int posicao = listaAnamneses.FindIndex(e => e.IdAnamnese == anamnese.IdAnamnese);
             listaAnamneses[posicao] = anamnese;
         }
 
         public void Remover(Anamnese anamnese)
         {
-            int posicao = listaAnamneses.FindIndex(e => e.CodPergunta == anamnese.CodPergunta);
+            int posicao = listaAnamneses.FindIndex(e => e.IdAnamnese == anamnese.IdAnamnese);
             listaAnamneses.RemoveAt(posicao);
         }
 

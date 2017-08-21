@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Model.Models;
+
 
 namespace Persistencia.Persistence
 {
-    class ProfessorPersistencia
+    public class RepositorioProfessor
     {
         private static List<Professor> listaProfessores;
 
-        static ProfessorPersistencia()
+        static RepositorioProfessor()
         {
             listaProfessores = new List<Professor>();
         }
