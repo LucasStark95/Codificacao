@@ -15,7 +15,9 @@ namespace Model.Models
         private int matriculaUsuario;
         private string emailUsuario;
         private string senhaUsuario;
-        private string tipoUsuario;
+        private string nomeMae;
+        private int tipoUsuario;
+        private string endereco;
 
         public Usuario()
         {
@@ -27,6 +29,17 @@ namespace Model.Models
             set { idUsuario = value; }
         }
 
+        public string Endereco
+        {
+            get { return endereco; }
+            set { endereco = value; }
+        }
+        public string NomeMae
+        {
+            get { return nomeMae; }
+            set { nomeMae = value; }
+        }
+        
         public string NomeUsuario
         {
             get { return nomeUsuario; }
@@ -51,7 +64,7 @@ namespace Model.Models
             set { senhaUsuario = value; }
         }
 
-        public string TipoUsuario
+        public int TipoUsuario
         {
             get { return tipoUsuario; }
             set { tipoUsuario = value; }

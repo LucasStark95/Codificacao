@@ -32,7 +32,7 @@ namespace Model.Models
 
         public int IdPeriograma
         {
-            get { return idPeriograma }
+            get { return idPeriograma; }
             set { idPeriograma = value; }
         }
 
