@@ -41,6 +41,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\GerenciadorAdministrador.cs" />
+    <Compile Include="Business\GerenciadorAluno.cs" />
+    <Compile Include="Business\GerenciadorAnamnese.cs" />
+    <Compile Include="Business\GerenciadorConsulta.cs" />
+    <Compile Include="Business\GerenciadorPaciente.cs" />
+    <Compile Include="Business\GerenciadorPeriograma.cs" />
+    <Compile Include="Business\GerenciadorProfessor.cs" />
+    <Compile Include="Business\GerenciadorProntuario.cs" />
+    <Compile Include="Business\GerenciadorTecnico.cs" />
+    <Compile Include="Business\GerenciadorTriagem.cs" />
     <Compile Include="Business\GerenciadorUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
