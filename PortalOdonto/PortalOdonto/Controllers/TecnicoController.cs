@@ -5,78 +5,67 @@ using System.Web;
 using System.Web.Mvc;
 using Model.Models;
 using Negocio.Business;
+
 namespace PortalOdonto.Controllers
 {
-    public class AdministradorController : Controller
+    public class TecnicoController : Controller
     {
-        
-        private GerenciadorUsuario usuarioGerenciador;
-        // GET: Usuario
-        public AdministradorController()
-        {           
-            usuarioGerenciador = new GerenciadorUsuario();
+        private GerenciadorTriagem triagem;
+
+        public TecnicoController()
+        {
+            triagem = new GerenciadorTriagem();
         }
+        
+        // GET: Tecnico
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: Usuario/Details/5
+        // GET: Tecnico/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        
+        // GET: Tecnico/Create
         public ActionResult Create()
         {
-           
             return View();
         }
 
-        // POST: Usuario/Create
+        // POST: Tecnico/Create
         [HttpPost]
-        public ActionResult Create(FormCollection dadosForm, int tipo)
+        public ActionResult Create(Triagem tria)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    /*switch (tipo)
-                    {
-                        case 1:
-                            Professor p = new Professor();
-                            TryUpdateModel<Professor>(p, dadosForm.ToValueProvider());
-                            // falta implementar aluno, tecnico
-                    }
-                    */
-                    
-                   
-                    
+                    triagem.Adicionar(tria);
                     return RedirectToAction("Index");
                 }
             }
             catch
             {
-                //implementar uma menssagem de erro
+                //Tratamento de exceção para controladoras
             }
             return View();
         }
 
-        // GET: Usuario/Edit/5
+        // GET: Tecnico/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Usuario/Edit/5
+        // POST: Te
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
             try
             {
-                // TODO: Add update logic here
-
                 return RedirectToAction("Index");
             }
             catch
@@ -85,13 +74,13 @@ namespace PortalOdonto.Controllers
             }
         }
 
-        // GET: Usuario/Delete/5
+        // GET: Tecnico/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Usuario/Delete/5
+        // POST: Tecnico/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

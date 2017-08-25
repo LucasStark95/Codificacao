@@ -8,7 +8,7 @@ using Persistencia.Persistence;
 
 namespace Negocio.Business
 {
-    class GerenciadorAluno
+    public class GerenciadorAluno
     {
         private RepositorioAluno aluPersistencia;
 
