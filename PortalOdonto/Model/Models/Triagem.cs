@@ -9,7 +9,7 @@ namespace Model.Models
     public class Triagem
     {
 
-
+        private int idPaciente;
         private string dataTriagem;
         private string motivoConsulta;
         private string nomePaciente;
@@ -39,6 +39,12 @@ namespace Model.Models
 
         public Triagem()
         {
+        }
+
+        public int IdPaciente
+        {
+            get { return idPaciente; }
+            set { idPaciente = value; }
         }
 
         public int IdTriagem

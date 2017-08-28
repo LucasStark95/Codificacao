@@ -22,16 +22,5 @@ namespace Model.Models
             set { idTecnico = value; }
         }
 
-        public void MarcarCons()
-        {
-
-        }
-
-
-        public void CadPaci()
-        {
-
-        }
-
     }
 }

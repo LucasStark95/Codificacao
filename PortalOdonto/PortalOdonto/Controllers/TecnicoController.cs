@@ -11,10 +11,16 @@ namespace PortalOdonto.Controllers
     public class TecnicoController : Controller
     {
         private GerenciadorTriagem triagem;
+        private GerenciadorTecnico tecnico;
+        private GerenciadorPaciente paciente;
+        private GerenciadorConsulta consulta;
 
         public TecnicoController()
         {
             triagem = new GerenciadorTriagem();
+            tecnico = new GerenciadorTecnico();
+            paciente = new GerenciadorPaciente();
+            consulta = new GerenciadorConsulta();
         }
         
         // GET: Tecnico
@@ -23,21 +29,18 @@ namespace PortalOdonto.Controllers
             return View();
         }
 
-        // GET: Tecnico/Details/5
-        public ActionResult Details(int id)
+
+        // ============================ Triagem =========================================== //
+
+        // GET: Tecnico/CadastroTriagem
+        public ActionResult CadastrarTriagem()
         {
             return View();
         }
 
-        // GET: Tecnico/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Tecnico/Create
+        // POST: Tecnico/CadastroTriagem
         [HttpPost]
-        public ActionResult Create(Triagem tria)
+        public ActionResult CadastrarTriagem(Triagem tria)
         {
             try
             {
@@ -54,15 +57,57 @@ namespace PortalOdonto.Controllers
             return View();
         }
 
-        // GET: Tecnico/Edit/5
-        public ActionResult Edit(int id)
+
+        // ============================ Paciente =========================================== //
+
+        // GET: Tecnico/CadastroPaciente
+        public ActionResult CadastrarPaciente()
+        {
+            return View();
+        }
+
+        // POST: Tecnico/CadastroPaciente
+        [HttpPost]
+        public ActionResult CadastrarPaciente(Paciente pac)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    paciente.Adicionar(pac);
+                    return RedirectToAction("Index");
+                }
+            }
+            catch
+            {
+                //Tratamento de exceção para controladoras
+            }
+            return View();
+        }
+
+        //Visualizar Paciente
+        public ActionResult VisualizarPaciente(int id)
+        {
+            return View();
+        }
+
+        // ============================ Perfil =========================================== //
+
+        // GET: Tecnico/Perfil/
+        public ActionResult Perfil(int id)
+        {
+            return View();
+        }
+
+        // GET: Tecnico/EditarPerfil/
+        public ActionResult EditarPerfil(int id)
         {
             return View();
         }
 
         // POST: Te
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult EditarPerfil(int id, FormCollection collection)
         {
             try
             {
@@ -74,6 +119,46 @@ namespace PortalOdonto.Controllers
             }
         }
 
+        // ============================ Consulta =========================================== //
+        public ActionResult CadastrarConsulta()
+        {
+            return View();
+        }
+
+        // POST: Tecnico/CadastroPaciente
+        [HttpPost]
+        public ActionResult CadastrarConsulta(Consulta_M con)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    consulta.Adicionar(con);
+                    return RedirectToAction("Index");
+                }
+            }
+            catch
+            {
+                //Tratamento de exceção para controladoras
+            }
+            return View();
+        }
+
+        //Visualizar Consulta
+        public ActionResult VisualizarConsulta(int id)
+        {
+            return View();
+        }
+
+        //Visualizar Consultas
+        public ActionResult VisualizarConsultas()
+        {
+            return View();
+        }
+
+        // ============================ Aréa a ser debatida =========================================== //
+
+        //Pode haver remoção?
         // GET: Tecnico/Delete/5
         public ActionResult Delete(int id)
         {
