@@ -42,14 +42,23 @@ namespace PortalOdonto.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    /*switch (tipo)
+                    switch (tipo)
                     {
-                        case 1:
-                            Professor p = new Professor();
-                            TryUpdateModel<Professor>(p, dadosForm.ToValueProvider());
-                            // falta implementar aluno, tecnico
+                        case 1:                            
+                             Professor p = new Professor();
+                             TryUpdateModel<Professor>(p, dadosForm.ToValueProvider());
+                             break;
+                            
+                        case 2:
+                            Aluno a = new Aluno();
+                            TryUpdateModel<Aluno>(a, dadosForm.ToValueProvider());
+                            break;
+                        case 3:
+                            Tecnico t = new Tecnico();
+                            TryUpdateModel<Tecnico>(t, dadosForm.ToValueProvider());
+                            break;
                     }
-                    */
+                    
                     
                    
                     
