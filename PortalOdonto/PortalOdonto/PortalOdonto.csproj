@@ -189,6 +189,9 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Tecnico\Index.cshtml" />
+    <Content Include="Views\Administrador\Create.cshtml" />
+    <Content Include="Views\Administrador\Detalhes.cshtml" />
+    <Content Include="Views\Administrador\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
