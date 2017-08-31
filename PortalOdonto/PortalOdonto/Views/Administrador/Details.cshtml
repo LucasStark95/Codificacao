@@ -1,13 +1,13 @@
-﻿@model Model.Models.Administrador
+﻿@model Model.Models.Usuario
 
 @{
-    ViewBag.Title = "Detalhes";
+    ViewBag.Title = "Details";
 }
 
-<h2>Detalhes</h2>
+<h2>Details</h2>
 
 <div>
-    <h4>Administrador</h4>
+    <h4>Usuario</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -72,14 +72,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.TipoUsuario)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.IdAdministrador)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IdAdministrador)
         </dd>
 
     </dl>
