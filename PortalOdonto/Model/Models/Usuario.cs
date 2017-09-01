@@ -5,26 +5,23 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
+    public enum TipoUsuario { PROFESSOR, TECNICO, ALUNO }
 
     public class Usuario
     {
-        
         private int idUsuario;
         private string nomeUsuario;
         private int matriculaUsuario;
         private string emailUsuario;
         private string senhaUsuario;
         private string nomeMae;
-        private int tipoUsuario;
         private string endereco;
         private string bairro;
         private string cep;
         private string cidade;
         private DateTime dataNascimento;
 
-        public Usuario()
-        {
-        }
+        public Usuario() { }
 
         [Required]
         [StringLength(300, MinimumLength = 2)]
@@ -111,14 +108,6 @@ namespace Model.Models
         {
             get { return senhaUsuario; }
             set { senhaUsuario = value; }
-        }
-
-        [StringLength(15, MinimumLength = 5)]
-        [Display(Name = "Tipo Usuário")]
-        public int TipoUsuario
-        {
-            get { return tipoUsuario; }
-            set { tipoUsuario = value; }
         }
 
         [Required]

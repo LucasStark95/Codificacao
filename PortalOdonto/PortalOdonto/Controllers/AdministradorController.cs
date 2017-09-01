@@ -36,32 +36,29 @@ namespace PortalOdonto.Controllers
 
         // POST: Usuario/Create
         [HttpPost]
-        public ActionResult Create(FormCollection dadosForm, int tipo)
+        public ActionResult Create(FormCollection dadosForm)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
+                    int tipo = Convert.ToInt32(dadosForm["TipoUsuario"]);
+                    tipo--;
                     switch (tipo)
                     {
-                        case 1:                            
+                        case ((int) TipoUsuario.PROFESSOR):                            
                              Professor p = new Professor();
                              TryUpdateModel<Professor>(p, dadosForm.ToValueProvider());
                              break;
-                            
-                        case 2:
+                        case ((int)TipoUsuario.ALUNO):
                             Aluno a = new Aluno();
                             TryUpdateModel<Aluno>(a, dadosForm.ToValueProvider());
                             break;
-                        case 3:
+                        case ((int)TipoUsuario.TECNICO):
                             Tecnico t = new Tecnico();
                             TryUpdateModel<Tecnico>(t, dadosForm.ToValueProvider());
                             break;
-                    }
-                    
-                    
-                   
-                    
+                    }                    
                     return RedirectToAction("Index");
                 }
             }
