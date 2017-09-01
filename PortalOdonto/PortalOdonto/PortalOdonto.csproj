@@ -188,7 +188,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Tecnico\Index.cshtml" />
     <Content Include="Views\Administrador\Create.cshtml" />
     <Content Include="Views\Administrador\Edit.cshtml" />
     <Content Include="Views\Administrador\Details.cshtml" />
@@ -196,6 +195,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\Aluno\" />
+    <Folder Include="Views\Tecnico\" />
     <Folder Include="Views\Usuario\" />
   </ItemGroup>
   <ItemGroup>
