@@ -1,8 +1,6 @@
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -14,7 +12,7 @@ namespace Model.Models
         private string cpfPaciente;
         private string rgPaciente;
         private string responsavelPaciente;
-        private string dt_nascimentoPaciente;
+        private string dtNascimentoPaciente;
         private char sexo;
         private string naturalidade;
         private string estado;
@@ -41,27 +39,26 @@ namespace Model.Models
         {
         }
 
+        [Required]
+        [Display (Name = "ID Paciente")]
         public int IdPaciente
         {
             get { return idPaciente; }
             set { idPaciente = value; }
         }
+
+        [Required]
+        [Display (Name = "Nome Completo")]
+        [StringLength (60, MinimumLength = 20)]
         public string NomePaciente
         {
             get { return nomePaciente; }
             set { nomePaciente = value; }
         }
-        public string EnderecoPaciente
-        {
-            get { return enderecoPaciente; }
-            set { enderecoPaciente = value; }
-        }
-        public string CpfPaciente
-        {
-            get { return cpfPaciente; }
-            set { cpfPaciente = value; }
-        }
 
+        [Required]
+        [StringLength(14, MinimumLength = 6)]
+        [Display (Name = "RG")]
         public string RgPaciente
         {
             get
@@ -69,132 +66,193 @@ namespace Model.Models
             set { rgPaciente = value; }
         }
 
+        [Required]
+        [StringLength(15, MinimumLength = 11)]
+        [Display(Name = "CPF")]
+        public string CpfPaciente
+        {
+            get { return cpfPaciente; }
+            set { cpfPaciente = value; }
+        }
+
+        [Required]
+        [Display (Name = "Endereço")]
+        [StringLength(60, MinimumLength = 20)]
+        public string EnderecoPaciente
+        {
+            get { return enderecoPaciente; }
+            set { enderecoPaciente = value; }
+        }
+
+        [Required]
+        [Display (Name = "Responsavel")]
         public string ResponsavelPaciente
         {
             get { return responsavelPaciente; }
             set { responsavelPaciente = value; }
         }
 
+        [Required]
+        [DataType(DataType.Date)]
+        [Display(Name = "Data Nascimento")]
+        [DisplayFormat(DataFormatString = "dd/mm/yyyy")]
         public string Dt_nascimentoPaciente
         {
-            get { return dt_nascimentoPaciente; }
-            set { dt_nascimentoPaciente = value; }
+            get { return dtNascimentoPaciente; }
+            set { dtNascimentoPaciente = value; }
         }
 
+        
+        [Display(Name = "Sexo")]
+        [StringLength(1, MinimumLength = 1)]
         public char Sexo
         {
             get { return sexo; }
             set { sexo = value; }
         }
 
+        [Display (Name = "Naturalidade")]
+        [StringLength(40, MinimumLength = 20)]
         public string Naturalidade
         {
             get { return naturalidade; }
             set { naturalidade = value; }
         }
 
+        [Display(Name = "Estado")]
+        [StringLength(40, MinimumLength = 20)]
         public string Estado
         {
             get { return estado; }
             set { estado = value; }
         }
 
+        [Display(Name = "Nacionalidade")]
+        [StringLength(40, MinimumLength = 20)]
         public string Nacionalidade
         {
             get { return nacionalidade; }
             set { nacionalidade = value; }
         }
 
+        [Display(Name = "Estado Civil")]
+        [StringLength(40, MinimumLength = 20)]
         public string EstadoCivil
         {
             get { return estadoCivil; }
             set { estadoCivil = value; }
         }
 
+        [Display(Name = "Raça")]
+        [StringLength(40, MinimumLength = 20)]
         public string Raca
         {
             get { return raca; }
             set { raca = value; }
         }
 
+        [Display(Name = "Religião")]
+        [StringLength(40, MinimumLength = 20)]
         public string Religiao
         {
             get { return religiao; }
             set { religiao = value; }
         }
 
+        [Display(Name = "Peso")]
         public double Peso
         {
             get { return peso; }
             set { peso = value; }
         }
 
+        [Display(Name = "Altura")]
         public double Altura
         {
             get { return altura; }
             set { altura = value; }
         }
 
+        [Display(Name = "Escolaridade")]
+        [StringLength(40, MinimumLength = 20)]
         public string GrauDeInstrucao
         {
             get { return grauDeInstrucao; }
             set { grauDeInstrucao = value; }
         }
 
+        [Display(Name = "Pai")]
+        [StringLength(60, MinimumLength = 20)]
         public string Pai
         {
             get { return pai; }
             set { pai = value; }
         }
 
+        [Display(Name = "Mãe")]
+        [StringLength(60, MinimumLength = 20)]
         public string Mae
         {
             get { return mae; }
             set { mae = value; }
         }
 
+        [Display(Name = "Nacionalidade do Pai")]
+        [StringLength(40, MinimumLength = 20)]
         public string NacionalidadePai
         {
             get { return nacionalidadePai; }
             set { nacionalidadePai = value; }
         }
 
+        [Display(Name = "Nacionalidade da Mãe")]
+        [StringLength(40, MinimumLength = 20)]
         public string NacionalidadeMae
         {
             get { return nacionalidadeMae; }
             set { nacionalidadeMae = value; }
         }
 
+        [Display(Name = "Profissão")]
+        [StringLength(40, MinimumLength = 20)]
         public string Profissao
         {
             get { return profissao; }
             set { profissao = value; }
         }
 
+        [Display(Name = "Zona")]
+        [StringLength(40, MinimumLength = 20)]
         public string Zona
         {
             get { return zona; }
             set { zona = value; }
         }
 
+        [Display(Name = "Contato")]
+        [StringLength(20, MinimumLength = 20)]
         public string Contato
         {
             get { return contato; }
             set { contato = value; }
         }
 
+        [Display(Name = "Cidade")]
+        [StringLength(60, MinimumLength = 20)]
         public string Cidade
         {
             get { return cidade; }
             set { cidade = value; }
         }
 
+        [Display(Name = "Pressão Arterial")]
         public double PressaoArterial
         {
             get { return pressaoArterial; }
             set { pressaoArterial = value; }
         }
 
+        [Display(Name = "Batimento Cardiaco")]
         public double BatimentoCardiaco
         {
             get { return batimentoCardiaco; }

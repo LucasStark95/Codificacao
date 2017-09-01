@@ -1,8 +1,6 @@
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+using System.ComponentModel.DataAnnotations;
 
 
 namespace Model.Models
@@ -16,6 +14,8 @@ namespace Model.Models
         {
         }
 
+        [Required]
+        [Display (Name = "ID Técnico")]
         public int IdTecnico
         {
             get { return idTecnico; }
