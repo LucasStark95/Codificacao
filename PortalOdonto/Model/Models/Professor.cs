@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -15,6 +16,8 @@ namespace Model.Models
         {
         }
 
+        [Required]       
+        [Display(Name = "Professor")]
         public int IdProfessor
         {
             get { return idProfessor; }
