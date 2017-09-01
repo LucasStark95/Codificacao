@@ -18,20 +18,20 @@ namespace Negocio.Business
             admPersistencia = new RepositorioAdministrador();
             }
 
-            public Administrador Adicionar(Administrador adm)
+            public Administrador Adicionar(Administrador administrador)
             {
-            admPersistencia.Adicionar(adm);
-                return adm;
+            admPersistencia.Adicionar(administrador);
+                return administrador;
             }
 
-            public void Editar(Administrador adm)
+            public void Editar(Administrador administrador)
             {
-            admPersistencia.Editar(adm);
+            admPersistencia.Editar(administrador);
             }
 
-            public void Remover(Administrador adm)
+            public void Remover(Administrador administrador)
             {
-            admPersistencia.Remover(adm);
+            admPersistencia.Remover(administrador);
             }
 
             public Administrador Obter(int id)

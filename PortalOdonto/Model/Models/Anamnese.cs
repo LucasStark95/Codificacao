@@ -1,8 +1,6 @@
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -18,22 +16,32 @@ namespace Model.Models
         {
         }
 
+        [Required]
+        [Display(Name = "ID Anamnese")]
         public int IdAnamnese
         {
             get { return idAnamnese; }
             set { idAnamnese = value; }
         }
+
+        [Required]
+        [Display (Name = "Codigo Pergunta")]
         public int CodPergunta
         {
             get { return cod_pergunta; }
             set { cod_pergunta = value; }
         }
 
+        [Required]
+        [Display (Name = "Resposta")]
         public string RespostaPergunta
         {
             get { return respostaPergunta; }
             set { respostaPergunta = value; }
         }
+
+        [Required]
+        [Display (Name = "Conclusão")]
         public string Conclusao
         {
             get { return conclusao; }

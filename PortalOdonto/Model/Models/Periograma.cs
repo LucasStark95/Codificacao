@@ -97,12 +97,5 @@ namespace Model.Models
             get { return indiceBioFilme; }
             set { indiceBioFilme = value; }
         }
-        public void CalcularSangramento() {
-
-        }
-
-        public void CalcularBiofilme() {
-
-        }
     }
 }

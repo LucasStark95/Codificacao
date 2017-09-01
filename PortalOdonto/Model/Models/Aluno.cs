@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -17,35 +18,22 @@ namespace Model.Models
         {
         }
 
-
+       [Required]
+       [Display (Name = "Ciclo")]
         public int Ciclo
         {
             get { return ciclo; }
             set { ciclo = value; }
         }
 
+        [Required]
+        [Display (Name = "ID Aluno")]
         public int IdAluno
         {
             get { return idAluno; }
             set { idAluno = value; }
         }
 
-        public void CriarConsulta()
-        {
-
-        }
-
-
-        public void AlterarPront()
-        {
-
-        }
-
-
-        public void VisualizarPront()
-        {
-
-        }
 
     }
 }

@@ -17,10 +17,10 @@ namespace Negocio.Business
             proPersistencia = new RepositorioProntuario();
         }
 
-        public Prontuario Adicionar(Prontuario pro)
+        public Prontuario Adicionar(Prontuario prontuario)
         {
-            proPersistencia.Adicionar(pro);
-            return pro;
+            proPersistencia.Adicionar(prontuario);
+            return prontuario;
         }
 
         public Prontuario Obter(int id)

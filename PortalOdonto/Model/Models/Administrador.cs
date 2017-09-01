@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -15,28 +16,13 @@ namespace Model.Models
         {
         }
 
+        [Required]
+        [Display (Name = "ID Administrador")]
         public int IdAdministrador
         {
             get { return idAdministrador; }
             set { idAdministrador = value; }
         }
 
-
-        public void CadProf()
-        {
-
-        }
-
-
-        public void CadTec()
-        {
-
-        }
-
-
-        public void CadAlun()
-        {
-
-        }
     }
 }

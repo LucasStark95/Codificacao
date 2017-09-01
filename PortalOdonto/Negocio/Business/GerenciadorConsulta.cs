@@ -17,20 +17,20 @@ namespace Negocio.Business
             conPersistencia = new RepositorioConsulta();
         }
 
-        public Consulta_M Adicionar(Consulta_M con)
+        public Consulta_M Adicionar(Consulta_M consulta)
         {
-            conPersistencia.Adicionar(con);
-            return con;
+            conPersistencia.Adicionar(consulta);
+            return consulta;
         }
 
-        public void Editar(Consulta_M pac)
+        public void Editar(Consulta_M consulta)
         {
-            conPersistencia.Editar(pac);
+            conPersistencia.Editar(consulta);
         }
 
-        public void Remover(Consulta_M pac)
+        public void Remover(Consulta_M consulta)
         {
-            conPersistencia.Remover(pac);
+            conPersistencia.Remover(consulta);
         }
 
         public Consulta_M Obter(int id)

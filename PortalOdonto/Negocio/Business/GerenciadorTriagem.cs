@@ -17,20 +17,20 @@ namespace Negocio.Business
             triPersistencia = new RepositorioTriagem();
         }
 
-        public Triagem Adicionar(Triagem tri)
+        public Triagem Adicionar(Triagem triagem)
         {
-            triPersistencia.Adicionar(tri);
-            return tri;
+            triPersistencia.Adicionar(triagem);
+            return triagem;
         }
 
-        public void Editar(Triagem tri)
+        public void Editar(Triagem triagem)
         {
-            triPersistencia.Editar(tri);
+            triPersistencia.Editar(triagem);
         }
 
-        public void Remover(Triagem tri)
+        public void Remover(Triagem triagem)
         {
-            triPersistencia.Remover(tri);
+            triPersistencia.Remover(triagem);
         }
 
         public Triagem Obter(int id)

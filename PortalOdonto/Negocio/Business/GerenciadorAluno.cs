@@ -17,20 +17,20 @@ namespace Negocio.Business
             aluPersistencia = new RepositorioAluno();
         }
 
-        public Aluno Adicionar(Aluno alu)
+        public Aluno Adicionar(Aluno aluno)
         {
-            aluPersistencia.Adicionar(alu);
-            return alu;
+            aluPersistencia.Adicionar(aluno);
+            return aluno;
         }
 
-        public void Editar(Aluno alu)
+        public void Editar(Aluno aluno)
         {
-            aluPersistencia.Editar(alu);
+            aluPersistencia.Editar(aluno);
         }
 
-        public void Remover(Aluno alu)
+        public void Remover(Aluno aluno)
         {
-            aluPersistencia.Remover(alu);
+            aluPersistencia.Remover(aluno);
         }
 
         public Aluno Obter(int id)

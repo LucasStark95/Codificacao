@@ -17,20 +17,20 @@ namespace Negocio.Business
             anaPersistencia = new RepositorioAnamnese();
         }
 
-        public Anamnese Adicionar(Anamnese ana)
+        public Anamnese Adicionar(Anamnese anamnese)
         {
-            anaPersistencia.Adicionar(ana);
-            return ana;
+            anaPersistencia.Adicionar(anamnese);
+            return anamnese;
         }
 
-        public void Editar(Anamnese ana)
+        public void Editar(Anamnese anamnese)
         {
-            anaPersistencia.Editar(ana);
+            anaPersistencia.Editar(anamnese);
         }
 
-        public void Remover(Anamnese ana)
+        public void Remover(Anamnese anamnese)
         {
-            anaPersistencia.Remover(ana);
+            anaPersistencia.Remover(anamnese);
         }
 
         public Anamnese Obter(int id)

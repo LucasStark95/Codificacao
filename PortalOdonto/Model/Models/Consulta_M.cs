@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace Model.Models
 {
@@ -19,26 +20,34 @@ namespace Model.Models
         {
         }
 
+        [Required]
+        [Display (Name = "ID Consulta")]
         public int IdConsulta
         {
             get { return idConsulta; }
             set { idConsulta = value; }
         }
 
+        [Required]
+        [DataType(DataType.Date)]
+        [Display(Name = "Data da Consulta")]
+        [DisplayFormat(DataFormatString = "dd/mm/yyyy")]
         public string DataConsulta
         {
             get { return dataConsulta; }
             set { dataConsulta = value; }
         }
 
-
+        [Required]
+        [Display (Name = "Nome do Aluno")]
         public string NomeAluno
         {
             get { return nomeAluno; }
             set { nomeAluno = value; }
         }
 
-
+        [Required]
+        [Display (Name = "Nome do Paciente")]
         public string NomePaciente
         {
             get { return nomePaciente; }

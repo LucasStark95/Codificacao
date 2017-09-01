@@ -17,15 +17,15 @@ namespace Negocio.Business
             periPersistencia = new RepositorioPeriograma();
         }
 
-        public Periograma Adicionar(Periograma per)
+        public Periograma Adicionar(Periograma periograma)
         {
-            periPersistencia.Adicionar(per);
-            return per;
+            periPersistencia.Adicionar(periograma);
+            return periograma;
         }
 
-        public void Editar(Periograma per)
+        public void Editar(Periograma periograma)
         {
-            periPersistencia.Editar(per);
+            periPersistencia.Editar(periograma);
         }
 
         public Periograma Obter(int id)

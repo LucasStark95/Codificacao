@@ -17,20 +17,20 @@ namespace Negocio.Business
             tecPersistencia = new RepositorioTecnico();
         }
 
-        public Tecnico Adicionar(Tecnico tec)
+        public Tecnico Adicionar(Tecnico tecnico)
         {
-            tecPersistencia.Adicionar(tec);
-            return tec;
+            tecPersistencia.Adicionar(tecnico);
+            return tecnico;
         }
 
-        public void Editar(Tecnico tec)
+        public void Editar(Tecnico tecnico)
         {
-            tecPersistencia.Editar(tec);
+            tecPersistencia.Editar(tecnico);
         }
 
-        public void Remover(Tecnico tec)
+        public void Remover(Tecnico tecnico)
         {
-            tecPersistencia.Remover(tec);
+            tecPersistencia.Remover(tecnico);
         }
 
         public Tecnico Obter(int id)

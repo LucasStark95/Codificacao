@@ -17,20 +17,20 @@ namespace Negocio.Business
             proPersistencia = new RepositorioProfessor();
         }
 
-        public Professor Adicionar(Professor pro)
+        public Professor Adicionar(Professor professor)
         {
-            proPersistencia.Adicionar(pro);
-            return pro;
+            proPersistencia.Adicionar(professor);
+            return professor;
         }
 
-        public void Editar(Professor pro)
+        public void Editar(Professor professor)
         {
-            proPersistencia.Editar(pro);
+            proPersistencia.Editar(professor);
         }
 
-        public void Remover(Professor pro)
+        public void Remover(Professor professor)
         {
-            proPersistencia.Remover(pro);
+            proPersistencia.Remover(professor);
         }
 
         public Professor Obter(int id)

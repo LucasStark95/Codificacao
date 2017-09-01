@@ -17,20 +17,20 @@ namespace Negocio.Business
             pacPersistencia = new RepositorioPaciente();
         }
 
-        public Paciente Adicionar(Paciente pac)
+        public Paciente Adicionar(Paciente paciente)
         {
-            pacPersistencia.Adicionar(pac);
-            return pac;
+            pacPersistencia.Adicionar(paciente);
+            return paciente;
         }
 
-        public void Editar(Paciente pac)
+        public void Editar(Paciente paciente)
         {
-            pacPersistencia.Editar(pac);
+            pacPersistencia.Editar(paciente);
         }
 
-        public void Remover(Paciente pac)
+        public void Remover(Paciente paciente)
         {
-            pacPersistencia.Remover(pac);
+            pacPersistencia.Remover(paciente);
         }
 
         public Paciente Obter(int id)

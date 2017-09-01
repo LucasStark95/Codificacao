@@ -15,23 +15,10 @@ namespace Model.Models
         {
         }
 
-
         public int IdProfessor
         {
             get { return idProfessor; }
             set { idProfessor = value; }
-        }
-
-
-        public void validarPront()
-        {
-
-        }
-
-
-        public void visualizarPront()
-        {
-
         }
     }
 }

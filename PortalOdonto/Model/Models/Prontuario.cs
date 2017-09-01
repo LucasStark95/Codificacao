@@ -9,9 +9,9 @@ namespace Model.Models
     public class Prontuario
     {
 
-        private string data_alteracao;
+        private string dataAlteracao;
         private string diagnostico;
-        private string data_inicial;
+        private string dataInicial;
         private string descricao;
         private int idProntuario;
 
@@ -25,20 +25,20 @@ namespace Model.Models
             get { return idProntuario; }
             set { idProntuario = value; }
         }
-        public string Data_alteracao
+        public string DataAlteracao
         {
-            get { return data_alteracao; }
-            set { data_alteracao = value; }
+            get { return dataAlteracao; }
+            set { dataAlteracao = value; }
         }
         public string Diagnostico
         {
             get { return diagnostico; }
             set { diagnostico = value; }
         }
-        public string Data_inicial
+        public string DataInicial
         {
-            get { return data_inicial; }
-            set { data_inicial = value; }
+            get { return dataInicial; }
+            set { dataInicial = value; }
         }
         public string Descricao
         {
