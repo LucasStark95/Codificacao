@@ -41,7 +41,7 @@ namespace Model.Models
             set { matriculaUsuario = value; }
         }
 
-        [Required]
+        
         [Key]
         [Display(Name = "ID Usuário")]
         public int IdUsuario
@@ -100,7 +100,7 @@ namespace Model.Models
             set { emailUsuario = value; }
         }
 
-        [Required]
+        
         [StringLength(20, MinimumLength = 8)]
         [DataType(DataType.Password)]
         [Display (Name = "Senha")]
@@ -110,7 +110,7 @@ namespace Model.Models
             set { senhaUsuario = value; }
         }
 
-        [Required]
+        
         [DataType(DataType.Date)]
         [Display (Name = "Data Nascimento")]
         [DisplayFormat(DataFormatString = "dd/mm/yyyy")]
