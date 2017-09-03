@@ -33,7 +33,6 @@ namespace Model.Models
         }
 
         [Required]
-        [StringLength(30, MinimumLength = 10)]
         [Display(Name = "Matricula")]
         public int MatriculaUsuario
         {
@@ -50,7 +49,7 @@ namespace Model.Models
             set { idUsuario = value; }
         }
 
-        [StringLength (200, MinimumLength = 20)]
+        [StringLength (200, MinimumLength = 5)]
         [Display (Name = "Endereço")]
         public string Endereco
         {
@@ -58,7 +57,7 @@ namespace Model.Models
             set { endereco = value; }
         }
 
-        [StringLength(200, MinimumLength = 20)]
+        [StringLength(200, MinimumLength = 10)]
         [Display(Name = "Bairro")]
         public string Bairro
         {
@@ -82,7 +81,7 @@ namespace Model.Models
             set { cidade = value; }
         }
        
-        [StringLength(60, MinimumLength = 20)]
+        [StringLength(60, MinimumLength = 10)]
         [Display(Name = "Mãe")]
         public string NomeMae
         {
