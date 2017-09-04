@@ -27,7 +27,14 @@ namespace PortalOdonto.Controllers
             return View();
         }
 
-        
+        public ActionResult ListaDeUsuario()
+        {
+            List<Usuario> usuarios = usuarioGerenciador.ObterTodos();
+            if (usuarios == null || usuarios.Count == 0)
+                usuarios = null;
+            return View(usuarios);
+        }
+
         public ActionResult Create()
         {
            
@@ -53,20 +60,20 @@ namespace PortalOdonto.Controllers
                              TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
                             usuarioGerenciador.Adicionar(u);
                              break;
-                        case ((int)TipoUsuario.ALUNO):
-                            Aluno a = new Aluno();
-                            TryUpdateModel<Aluno>(a, dadosForm.ToValueProvider());
-                            TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
-                            usuarioGerenciador.Adicionar(u);
-                            break;
                         case ((int)TipoUsuario.TECNICO):
                             Tecnico t = new Tecnico();
                             TryUpdateModel<Tecnico>(t, dadosForm.ToValueProvider());
                             TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
                             usuarioGerenciador.Adicionar(u);
                             break;
+                        case ((int)TipoUsuario.ALUNO):
+                            Aluno a = new Aluno();
+                            TryUpdateModel<Aluno>(a, dadosForm.ToValueProvider());
+                            TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
+                            usuarioGerenciador.Adicionar(u);
+                            break;                                                  
                     }                    
-                    return RedirectToAction("Index");
+                    return RedirectToAction("ListaDeUsuario");
                 }
                 else
                 {

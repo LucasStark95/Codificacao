@@ -1,4 +1,4 @@
-﻿@model Model.Models.Usuario
+﻿@model Model.Models.Administrador
 
 @{
     ViewBag.Title = "Details";
@@ -7,33 +7,9 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Usuario</h4>
+    <h4>Administrador</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.IdUsuario)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.IdUsuario)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Endereco)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Endereco)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.NomeMae)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.NomeMae)
-        </dd>
-
         <dt>
             @Html.DisplayNameFor(model => model.NomeUsuario)
         </dt>
@@ -48,6 +24,46 @@
 
         <dd>
             @Html.DisplayFor(model => model.MatriculaUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cep)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeMae)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeMae)
         </dd>
 
         <dt>
@@ -67,16 +83,24 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.TipoUsuario)
+            @Html.DisplayNameFor(model => model.DataNascimento)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.TipoUsuario)
+            @Html.DisplayFor(model => model.DataNascimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAdministrador)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAdministrador)
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdUsuario }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
