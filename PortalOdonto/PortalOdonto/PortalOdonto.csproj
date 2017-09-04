@@ -193,6 +193,8 @@
     <Content Include="Views\Administrador\Edit.cshtml" />
     <Content Include="Views\Administrador\Details.cshtml" />
     <Content Include="Views\Tecnico\Index.cshtml" />
+    <Content Include="Views\Administrador\ListaDeUsuario.cshtml" />
+    <Content Include="Views\Administrador\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

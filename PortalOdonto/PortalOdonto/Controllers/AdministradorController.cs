@@ -22,12 +22,11 @@ namespace PortalOdonto.Controllers
         }
 
         // GET: Usuario/Details/5
-        public ActionResult Details(int id)
-        {
+        public ActionResult Details (int id)
+        {          
             return View();
-        }
+        }       
 
-        
         public ActionResult Create()
         {
            
@@ -64,9 +63,9 @@ namespace PortalOdonto.Controllers
                             TryUpdateModel<Tecnico>(t, dadosForm.ToValueProvider());
                             TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
                             usuarioGerenciador.Adicionar(u);
-                            break;
+                            break;                                                                         
                     }                    
-                    return RedirectToAction("Index");
+                    return RedirectToAction("ListaDeUsuario");
                 }
                 else
                 {
@@ -106,6 +105,15 @@ namespace PortalOdonto.Controllers
         public ActionResult Delete(int id)
         {
             return View();
+        }
+
+        public ActionResult ListaDeUsuario()
+        {
+            List<Usuario> usuarios = usuarioGerenciador.ObterTodos();
+            if (usuarios == null || usuarios.Count == 0)
+                usuarios = null;
+
+            return View(usuarios);
         }
 
         // POST: Usuario/Delete/5
