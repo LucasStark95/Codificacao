@@ -125,6 +125,7 @@ namespace PortalOdonto.Controllers
                 Usuario user = usuarioGerenciador.Obter(id);
                 if (user!= null)
                     return View(user);
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
         }
@@ -142,6 +143,7 @@ namespace PortalOdonto.Controllers
             {
                 return View();
             }
+            
         }
     }
 }
