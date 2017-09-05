@@ -39,7 +39,6 @@ namespace Model.Models
             get { return matriculaUsuario; }
             set { matriculaUsuario = value; }
         }
-
         
         [Key]
         [Display(Name = "ID Usuário")]
@@ -66,7 +65,7 @@ namespace Model.Models
         }
 
         [StringLength(40, MinimumLength = 10)]
-        [Display(Name = "Cep")]
+        [Display(Name = "CEP")]
         public string Cep
         {
             get { return cep; }
@@ -99,7 +98,7 @@ namespace Model.Models
             set { emailUsuario = value; }
         }
 
-        
+        [Required]
         [StringLength(20, MinimumLength = 8)]
         [DataType(DataType.Password)]
         [Display (Name = "Senha")]
@@ -111,7 +110,12 @@ namespace Model.Models
 
         [Required]
         [DataType(DataType.Date)]
+<<<<<<< HEAD
         [Display (Name = "Data Nascimento")]
+=======
+        [Display (Name = "Data de Nascimento")]
+        [DisplayFormat(DataFormatString = "DD/MM/YYYY")]
+>>>>>>> 332a019e59968376c5d4ac44dd10054d6f2d86e3
         public DateTime DataNascimento
         {
             get { return dataNascimento; }

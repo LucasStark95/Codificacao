@@ -126,6 +126,7 @@ namespace PortalOdonto.Controllers
                 usuarioGerenciador.Remover(user);
                 if (user!= null)
                     return View(user);
+                return RedirectToAction("Index");
             }
             return RedirectToAction("Index");
         }
@@ -142,6 +143,7 @@ namespace PortalOdonto.Controllers
             {
                 return View();
             }
+            
         }
     }
 }
