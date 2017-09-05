@@ -109,7 +109,7 @@ namespace Model.Models
             set { senhaUsuario = value; }
         }
 
-        
+        [Required]
         [DataType(DataType.Date)]
         [Display (Name = "Data Nascimento")]
         [DisplayFormat(DataFormatString = "dd/mm/yyyy")]

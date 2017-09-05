@@ -33,20 +33,19 @@
                             emptyRowCellValue: "___", mode: WebGridPagerModes.All, numericLinksCount: 2, tableStyle: "table",
                             columns: tabela.Columns(
                                 tabela.Column("NomeUsuario", "Nome"),
-                                tabela.Column("MatriculaUsuario", "Matricula"),                               
+                                tabela.Column("MatriculaUsuario", "Matrícula"),
                                 tabela.Column("Ações", "Ações", canSort: false,
                                     format: (item) =>
-                                        (true) ?
                                             new HtmlString(String.Format("{0}|{1}|{2}", new object[] {
-                                                Html.ActionLink("Editar", "Edit", new { id = item.Id }).ToString(),
-                                                Html.ActionLink("Remover", "Delete", new { id = item.Id }).ToString(),
-                                                Html.ActionLink("Detalhes", "Details", new { id = item.Id }).ToString()
+                                                Html.ActionLink("Editar", "Edit", new { id = item.IdUsuario }).ToString(),
+                                                Html.ActionLink("Remover", "Delete", new { id = item.IdUsuario }).ToString(),
+                                                Html.ActionLink("Detalhes", "Details", new { id = item.IdUsuario }).ToString()
                                             }))
-                                        :null
                                 )
                             )
                         );
-            }else
+            }
+            else
             {
                 <p>Nenhum Usuário Cadastrado</p>
             }
