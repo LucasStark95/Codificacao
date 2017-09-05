@@ -123,6 +123,7 @@ namespace PortalOdonto.Controllers
             if (id.HasValue)
             {
                 Usuario user = usuarioGerenciador.Obter(id);
+                usuarioGerenciador.Remover(user);
                 if (user!= null)
                     return View(user);
             }
@@ -135,7 +136,6 @@ namespace PortalOdonto.Controllers
         {
             try
             {
-                usuarioGerenciador.Remover(user);
                 return RedirectToAction("Index");
             }
             catch
