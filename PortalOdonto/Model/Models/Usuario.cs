@@ -110,12 +110,7 @@ namespace Model.Models
 
         [Required]
         [DataType(DataType.Date)]
-<<<<<<< HEAD
-        [Display (Name = "Data Nascimento")]
-=======
         [Display (Name = "Data de Nascimento")]
-        [DisplayFormat(DataFormatString = "DD/MM/YYYY")]
->>>>>>> 332a019e59968376c5d4ac44dd10054d6f2d86e3
         public DateTime DataNascimento
         {
             get { return dataNascimento; }

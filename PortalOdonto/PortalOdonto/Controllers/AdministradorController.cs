@@ -103,11 +103,9 @@ namespace PortalOdonto.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
-                    usuarioGerenciador.Editar(user);
-                    return RedirectToAction("Index");
-                }
+                usuarioGerenciador.Editar(user);
+                return RedirectToAction("Index");
+                
             }
             catch
             {
