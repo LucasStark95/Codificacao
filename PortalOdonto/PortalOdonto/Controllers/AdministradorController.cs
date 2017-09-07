@@ -102,8 +102,8 @@ namespace PortalOdonto.Controllers
         {
             try
             {
-                    usuarioGerenciador.Editar(user);
-                    return RedirectToAction("Index");
+                usuarioGerenciador.Editar(user);
+                return RedirectToAction("Index");
                 
             }
             catch

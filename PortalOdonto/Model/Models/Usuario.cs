@@ -109,8 +109,8 @@ namespace Model.Models
         }
 
         [Required]
-        [DataType(DataType.DateTime)]
-        [Display (Name = "Data Nascimento")]
+        [DataType(DataType.Date)]
+        [Display (Name = "Data de Nascimento")]
         public DateTime DataNascimento
         {
             get { return dataNascimento; }
