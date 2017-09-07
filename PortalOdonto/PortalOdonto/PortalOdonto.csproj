@@ -195,6 +195,7 @@
     <Content Include="Views\Administrador\Create.cshtml" />
     <Content Include="Views\Tecnico\Index.cshtml" />
     <Content Include="Views\Administrador\Edit.cshtml" />
+    <Content Include="Views\Administrador\Buscar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

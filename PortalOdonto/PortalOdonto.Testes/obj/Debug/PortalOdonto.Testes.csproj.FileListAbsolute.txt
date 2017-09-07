@@ -60,9 +60,6 @@ C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStu
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\obj\Debug\PortalOdonto.Testes.csprojResolveAssemblyReference.cache
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\obj\Debug\PortalOdonto.Testes.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\obj\Debug\PortalOdonto.Testes.pdb
-C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.Reflection.Metadata.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\ApplicationInsights.config
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\csc.exe
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\csc.exe.config
@@ -75,6 +72,8 @@ C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\Por
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.AppContext.dll
@@ -82,6 +81,7 @@ C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\Por
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.IO.FileSystem.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\System.Reflection.Metadata.dll
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\vbc.exe
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\vbc.exe.config
 C:\Users\Lucas\Documents\Visual Studio 2017\Projects\Codificacao\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\roslyn\vbc.rsp

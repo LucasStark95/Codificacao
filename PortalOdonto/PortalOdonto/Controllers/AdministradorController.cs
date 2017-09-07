@@ -36,7 +36,6 @@ namespace PortalOdonto.Controllers
 
         public ActionResult Create()
         {
-           
             return View();
         }
 
@@ -103,11 +102,9 @@ namespace PortalOdonto.Controllers
         {
             try
             {
-                if (ModelState.IsValid)
-                {
                     usuarioGerenciador.Editar(user);
                     return RedirectToAction("Index");
-                }
+                
             }
             catch
             {
@@ -123,7 +120,6 @@ namespace PortalOdonto.Controllers
             if (id.HasValue)
             {
                 Usuario user = usuarioGerenciador.Obter(id);
-                usuarioGerenciador.Remover(user);
                 if (user!= null)
                     return View(user);
                 return RedirectToAction("Index");
@@ -137,13 +133,23 @@ namespace PortalOdonto.Controllers
         {
             try
             {
+                usuarioGerenciador.Remover(usuarioGerenciador.Obter(id));
                 return RedirectToAction("Index");
             }
             catch
             {
-                return View();
+                
             }
-            
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Buscar(int matricula)
+        {
+            Usuario usuarios = usuarioGerenciador.Buscar(matricula);
+            if (usuarios == null)
+                usuarios = null;
+
+            return View(usuarios);
         }
     }
 }
