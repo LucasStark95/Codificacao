@@ -75,7 +75,7 @@ namespace PortalOdonto.Controllers
                 if (ModelState.IsValid)
                 {
                     paciente.Adicionar(pac);
-                    return RedirectToAction("Index");
+                    return RedirectToAction("CadastrarTriagem");
                 }
             }
             catch
@@ -86,14 +86,41 @@ namespace PortalOdonto.Controllers
         }
 
         //Visualizar Paciente
-        public ActionResult VisualizarPaciente(int id)
+        public ActionResult VisualizarPaciente(int? id)
+        {
+            if (id.HasValue)
+            {
+               Paciente pac =  paciente.Obter(id);
+                if (paciente != null)
+                    return View(pac);
+          
+            }
+            return RedirectToAction("index");
+        }
+        // ============================ Perfil =========================================== //
+
+        // GET: Tecnico/Perfil/
+        public ActionResult CadastarTecnico()
         {
             return View();
         }
 
-        // ============================ Perfil =========================================== //
-
-        // GET: Tecnico/Perfil/
+        public ActionResult CadastrarTecnico(Tecnico t)
+        {
+            try
+            {
+                if (ModelState.IsValid) {
+                    tecnico.Editar(t);
+                    return RedirectToAction("Index");
+                }
+               
+            }
+            catch
+            {
+                
+            }
+            return View();
+        }
         public ActionResult Perfil(int id)
         {
             return View();
