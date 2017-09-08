@@ -40,7 +40,7 @@ namespace Negocio.Business
             return usuarioPersistencia.Obter(e => e.IdUsuario == id);
         }
 
-        public Usuario Buscar(int matricula)
+        public List<Usuario> Buscar(int? matricula)
         {
             return usuarioPersistencia.Buscar(e => e.MatriculaUsuario == matricula);
         }

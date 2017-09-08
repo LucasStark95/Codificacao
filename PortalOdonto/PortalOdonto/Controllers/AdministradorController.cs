@@ -143,13 +143,14 @@ namespace PortalOdonto.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Buscar(int matricula)
+        [HttpPost]
+        public ActionResult Buscar(int? matricula)
         {
-            Usuario usuarios = usuarioGerenciador.Buscar(matricula);
+            List<Usuario> usuarios = usuarioGerenciador.Buscar(matricula);
             if (usuarios == null)
                 usuarios = null;
 
-            return View(usuarios);
+            return View("Index", usuarios);
         }
     }
 }

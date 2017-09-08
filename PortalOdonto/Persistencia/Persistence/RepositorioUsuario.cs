@@ -40,9 +40,9 @@ namespace Persistencia.Persistence
             return listaUsuarios.Where(where).FirstOrDefault();
         }
 
-        public Usuario Buscar(Func<Usuario, bool> where)
+        public List<Usuario> Buscar(Func<Usuario, bool> where)
         {
-            return listaUsuarios.Where(where).FirstOrDefault();
+            return listaUsuarios.Where(where).ToList();
         }
 
         public List<Usuario> ObterTodos()
