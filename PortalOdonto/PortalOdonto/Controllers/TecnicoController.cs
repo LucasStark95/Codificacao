@@ -40,13 +40,13 @@ namespace PortalOdonto.Controllers
 
         // POST: Tecnico/CadastroTriagem
         [HttpPost]
-        public ActionResult CadastrarTriagem(Triagem tria)
+        public ActionResult CadastrarTriagem(FormCollection tria)
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-                    triagem.Adicionar(tria);
+                    
                     return RedirectToAction("Index");
                 }
             }

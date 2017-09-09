@@ -45,6 +45,7 @@
     <Compile Include="Models\Aluno.cs" />
     <Compile Include="Models\Anamnese.cs" />
     <Compile Include="Models\Consulta_M.cs" />
+    <Compile Include="Models\ModelTriagemPaciente.cs" />
     <Compile Include="Models\Paciente.cs" />
     <Compile Include="Models\Periograma.cs" />
     <Compile Include="Models\Professor.cs" />
