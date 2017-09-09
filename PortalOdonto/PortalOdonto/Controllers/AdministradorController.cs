@@ -48,6 +48,7 @@ namespace PortalOdonto.Controllers
                 if (ModelState.IsValid)
                 {
                     Usuario u = new Usuario();
+                    
                     int tipo = Convert.ToInt32(dadosForm["TipoUsuario"]);
                     tipo--;
                     switch (tipo)
@@ -56,7 +57,7 @@ namespace PortalOdonto.Controllers
                              Professor p = new Professor();
                              TryUpdateModel<Professor>(p, dadosForm.ToValueProvider());
                              TryUpdateModel<Usuario>(u, dadosForm.ToValueProvider());
-                            usuarioGerenciador.Adicionar(u);
+                             usuarioGerenciador.Adicionar(u);
                              break;
                         case ((int)TipoUsuario.ALUNO):
                             Aluno a = new Aluno();

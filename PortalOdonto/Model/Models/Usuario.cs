@@ -12,6 +12,7 @@ namespace Model.Models
         private int idUsuario;
         private string nomeUsuario;
         private int matriculaUsuario;
+        private int tipoUsuario;
         private string emailUsuario;
         private string senhaUsuario;
         private string nomeMae;
@@ -23,7 +24,7 @@ namespace Model.Models
 
         public Usuario() { }
 
-        [Required]
+        [Required(ErrorMessage = "Campo Obrigatório")]
         [StringLength(300, MinimumLength = 2)]
         [Display(Name = "Nome Completo")]
         public string NomeUsuario
@@ -32,7 +33,7 @@ namespace Model.Models
             set { nomeUsuario = value; }
         }
 
-        [Required]
+        [Required(ErrorMessage = "Campo Obrigatório")]
         [Display(Name = "Matricula")]
         public int MatriculaUsuario
         {
@@ -88,8 +89,9 @@ namespace Model.Models
             set { nomeMae = value; }
         }
 
-        [Required]
-        [StringLength(30, MinimumLength = 10)]
+        [Required(ErrorMessage = "Campo Obrigatório")]
+        [StringLength(60, MinimumLength = 10)]
+        [RegularExpression(@"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$")]
         [DataType (DataType.EmailAddress) ]
         [Display(Name = "Email")]
         public string EmailUsuario
@@ -115,6 +117,13 @@ namespace Model.Models
         {
             get { return dataNascimento; }
             set { dataNascimento = value; }
+        }
+
+        [Display(Name = "Nivel de Usuário")]
+        public int TipoUsuario
+        {
+            get { return tipoUsuario; }
+            set { tipoUsuario = value; }
         }
     }
 }

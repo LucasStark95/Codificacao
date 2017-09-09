@@ -14,27 +14,40 @@
             {
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1"> Usuário </span>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         @Html.Editor("matricula")
                         @Html.ValidationMessage("")
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="col-md-4"> </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3"> </div>
+                    <div class="col-md-3">
                         <input type="submit" value="Busca" class="btn btn-default" />
                     </div>
                     <div class="col-md-6">
-                        @Html.ActionLink("Limpar", "Index")
+                        @Html.ActionLink("Limpar", "Index","", new { @class = "btn btn-default" })
                     </div>
-                    
+                    <br/>
                 </div>
             }
-        </div>
+            <p>
+                Filtro
+                <br/>
+                </p>
+            <div class="form-group">
+                <div class="col-md-3">
+                    <span class="input-group-addon" id="basic-addon1"> Nome </span>
+                 </div>
+                <div class="col-md-3" id="filtro-nome">
+                    @Html.Editor("Nome", new { htmlAttributes = new { @id = "filtro-nome", @onchange = "filtro()" } })
+                </div>
+            </div>
+            </div>
+
             <div class="col-md-9">
 
                 <p>
-                    @Html.ActionLink("Cadastrar", "Create")
+                    @Html.ActionLink("Cadastrar", "Create", "", new { @class = "btn btn-default" })
                 </p><br>
 
                 @if (Model != null)
@@ -46,12 +59,13 @@
                      columns: tabela.Columns(
                          tabela.Column("NomeUsuario", "Nome"),
                          tabela.Column("MatriculaUsuario", "Matrícula"),
+                         tabela.Column("TipoUsuario","NIvel do Usuário"),
                          tabela.Column("Ações", "Ações", canSort: false,
                              format: (item) =>
-                                     new HtmlString(String.Format("{0}|{1}|{2}", new object[] {
-                                                Html.ActionLink("Editar", "Edit", new { id = item.IdUsuario }).ToString(),
-                                                Html.ActionLink("Remover", "Delete", new { id = item.IdUsuario }).ToString(),
-                                                Html.ActionLink("Detalhes", "Details", new { id = item.IdUsuario }).ToString()
+                                     new HtmlString(String.Format("{0} {1} {2}", new object[] {
+                                                Html.ActionLink("Editar", "Edit", new { id = item.IdUsuario }, new { @class = "btn btn-default" }).ToString(),
+                                                Html.ActionLink("Remover", "Delete", new { id = item.IdUsuario }, new { @class = "btn btn-default" }).ToString(),
+                                                Html.ActionLink("Detalhes", "Details", new { id = item.IdUsuario }, new { @class = "btn btn-default" }).ToString()
                                      }))
                          )
                      )

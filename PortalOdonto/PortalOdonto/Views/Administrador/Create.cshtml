@@ -57,6 +57,7 @@
                             Técnico @Html.RadioButton("TipoUsuario", 2, new { htmlAttributes = new { @class = "form-control" } })
                             Aluno @Html.RadioButton("TipoUsuario", 3, true, new { htmlAttributes = new { @class = "form-control" } })
                             @Html.ValidationMessage("TipoUsuario", "", new { @class = "text-danger" })
+
                         </div>                       
                         <div class="col-md-2"></div>
                     </div> 
@@ -74,7 +75,7 @@
                             <input type="submit" value="Cadastrar" class="btn btn-default" />
                         </div>
                         <div class="col-md-2">
-                            @Html.ActionLink("Cancelar", "Index")
+                            @Html.ActionLink("Cancelar", "Index", "", new { @class = "btn btn-default" })
                         </div>
                         <div class="col-md-4"> </div>
                     </div>
