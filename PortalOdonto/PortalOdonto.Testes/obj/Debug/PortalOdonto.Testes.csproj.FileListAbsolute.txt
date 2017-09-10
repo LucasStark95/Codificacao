@@ -39,6 +39,9 @@ C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStu
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.WebPages.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.Optimization.dll
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Negocio.dll
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Model.dll
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Persistencia.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\PortalOdonto.pdb
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\PortalOdonto.dll.config
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Newtonsoft.Json.xml
@@ -49,6 +52,9 @@ C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStu
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\System.Web.Optimization.xml
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Negocio.pdb
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Model.pdb
+C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\Persistencia.pdb
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\pt-BR\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\pt-br\System.Web.Helpers.resources.dll
 C:\Users\Fabricia\OneDrive\UFS\Sexto Periodo\Engenharia de Software II\VisualStudio\Codificacao\PortalOdonto\PortalOdonto.Testes\bin\Debug\pt-br\System.Web.Mvc.resources.dll
