@@ -85,6 +85,11 @@ namespace PortalOdonto.Controllers
             return View();
         }
 
+        public ActionResult ListarPacientes()
+        {
+            return View();
+        }
+
         //Visualizar Paciente
         public ActionResult VisualizarPaciente(int? id)
         {
